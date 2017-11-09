@@ -1,0 +1,35 @@
+
+/*color scss------------------------------------------------------------------------*/
+
+$colorDefaultText: #666;
+$colorDefaultTitle: #333;
+$activeColor: #FC83AB;
+$bgColor: #FFB3CC;
+
+/*border scss------------------------------------------------------------------------*/
+
+@mixin borderTop ($Num:1px,$Col:#e8e8e8){
+	border-top: $Num solid $Col;
+}
+
+@mixin borderBottom ($Num:1px,$Col:#e8e8e8){
+	border-bottom: $Num solid $Col;
+}
+
+/*flex scss------------------------------------------------------------------------*/
+
+@mixin flexBox ($type1:flex, $type2:space-around, $type3:center){
+	display: $type1;
+	justify-content: $type2;
+	align-items: $type3;
+}
+
+/*textClamp scss------------------------------------------------------------------------*/
+
+@mixin textClamp ($clampNum:1){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $clampNum;
+	-webkit-box-orient: vertical;
+}
