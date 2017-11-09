@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>vue-li-h</title>
+    <script type="text/javascript">
+	(function(win,doc){
+	change();
+	function change(){
+	doc.documentElement.style.fontSize = doc.documentElement.clientWidth *20/320+'px';
+	}
+	win.addEventListener('resize',change,false);
+	win.addEventListener('orientationchange',change,false);
+	})(window,document);
+	</script>
+	<style>
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+		a:hover, a:visited, a:link, a:active {
+		  text-decoration: none;
+		  color: #000;
+		}
+	</style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="build.js"></script>
+  </body>
+</html>
