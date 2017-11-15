@@ -1,4 +1,4 @@
-# vue-iview
+# vue-iview server
 
 > A Vue.js project
 
@@ -8,7 +8,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8090 启动后台管理系统页面
 npm run dev
 
 # build for production with minification
@@ -18,4 +18,16 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+``` bash
+cd server  
+
+# install dependencies
+npm install
+
+# Connect database
+mongod --dbpath D:\vue-zhubao@2.0.0-demo\server\server\data  连接数据库，这里换成你的路径
+
+# serve with hot reload at localhost:3000
+npm run server  注意：这里要返回根目录
+
+```
