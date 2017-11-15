@@ -1,5 +1,5 @@
 <template>
-  <div class="goodsList" style="overflow-y: scroll;height: 35rem;">
+  <div class="goodsList" style="overflow-y: scroll;">
   	<template v-for="(val,idx) in goodsList">
   		<div class="goodsList-container" @click="toGoodsDetails(val._id)">
   			<div class="goodsImg">
